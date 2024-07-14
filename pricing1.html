@@ -1,0 +1,124 @@
+<style>
+    .pricing-section { background-color: #fff; display: flex; align-items: center; justify-content: center; padding: 80px 60px; }
+    @media (max-width: 991px) { .pricing-section { padding: 0 20px; } }
+    .pricing-container { display: flex; margin-top: 47px; width: 100%; max-width: 1113px; flex-direction: column; align-items: center; }
+    @media (max-width: 991px) { .pricing-container { max-width: 100%; margin-top: 40px; } }
+    .pricing-subtitle { color: #1355ff; text-align: center; letter-spacing: 1.25px; text-transform: uppercase; font: 500 14px/171% Inter, sans-serif; }
+    .pricing-title { color: #07090d; text-align: center; letter-spacing: -0.84px; margin-top: 36px; font: 700 56px/129% 'Open Sauce Sans', -apple-system, Roboto, Helvetica, sans-serif; }
+    @media (max-width: 991px) { .pricing-title { max-width: 100%; font-size: 40px; } }
+    .pricing-plans { align-self: stretch; margin-top: 51px; }
+    @media (max-width: 991px) { .pricing-plans { max-width: 100%; margin-top: 40px; } }
+    .plans-container { gap: 20px; display: flex; }
+    @media (max-width: 991px) { .plans-container { flex-direction: column; align-items: stretch; gap: 0; } }
+    .plan-column { display: flex; flex-direction: column; line-height: normal; width: 33%; margin-left: 0; }
+    @media (max-width: 991px) { .plan-column { width: 100%; } }
+    .plan-card { border-radius: 12px; border: 1px solid #e7eaee; background-color: #fff; display: flex; width: 100%; flex-direction: column; margin: 0 auto; padding: 40px; }
+    @media (max-width: 991px) { .plan-card { margin-top: 28px; padding: 0 20px; } }
+    .plan-type { color: #1355ff; letter-spacing: 1.25px; text-transform: uppercase; font: 500 14px/24px Inter, sans-serif; }
+    .price-container { display: flex; margin-top: 16px; gap: 13px; white-space: nowrap; padding: 13px 0; }
+    @media (max-width: 991px) { .price-container { white-space: initial; } }
+    .price { color: #07090d; letter-spacing: -0.66px; flex-grow: 1; font: 700 44px/136% 'Open Sauce Sans', -apple-system, Roboto, Helvetica, sans-serif; }
+    .price-period { color: #acb4c3; align-self: end; margin-top: 22px; flex-grow: 1; flex-basis: auto; font: 500 16px/150% Lato, sans-serif; }
+    .feature-item { display: flex; margin-top: 16px; gap: 12px; font-size: 14px; color: #818a9c; font-weight: 400; text-align: center; letter-spacing: -0.09px; line-height: 24px; }
+    .feature-icon { aspect-ratio: 1; object-fit: auto; object-position: center; width: 24px; }
+    .feature-text { font-family: Inter, sans-serif; }
+    .plan-button { justify-content: center; align-items: center; border-radius: 6px; border: 1px solid #e7eaee; background-color: #fff; margin-top: 48px; color: #07090d; white-space: nowrap; letter-spacing: -0.09px; padding: 12px 24px; font: 500 14px/24px Inter, sans-serif; }
+    @media (max-width: 991px) { .plan-button { margin-top: 40px; white-space: initial; padding: 0 20px; } }
+    .featured-plan { background-color: #07090d; color: #fff; }
+    .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+    </style>
+    
+    <section class="pricing-section">
+      <div class="pricing-container">
+        <h2 class="pricing-subtitle">PRICING DETAILS</h2>
+        <h1 class="pricing-title">Choose Your Package!</h1>
+        <div class="pricing-plans">
+          <div class="plans-container">
+            <div class="plan-column">
+              <div class="plan-card">
+                <h3 class="plan-type">professional</h3>
+                <div class="price-container">
+                  <span class="price">Free</span>
+                  <span class="price-period">/Month</span>
+                </div>
+                <ul class="feature-list">
+                  <li class="feature-item">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a0f8c66dfd46f81d3531e5a87e1325e20efebb7182e40842c26ee1dc41073ff4?apiKey=08e3ef7909dd4781ba6c9375e19e6af4&" alt="" class="feature-icon" />
+                    <span class="feature-text">1 Unlimited Bandwidth</span>
+                  </li>
+                  <li class="feature-item">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/32c6ef160c826c8ac672f0b287a4a7a11c6ff2d8aa990ec57b566c46ed866b7f?apiKey=08e3ef7909dd4781ba6c9375e19e6af4&" alt="" class="feature-icon" />
+                    <span class="feature-text">2 PDF Access Sosmed</span>
+                  </li>
+                  <li class="feature-item">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/32c6ef160c826c8ac672f0b287a4a7a11c6ff2d8aa990ec57b566c46ed866b7f?apiKey=08e3ef7909dd4781ba6c9375e19e6af4&" alt="" class="feature-icon" />
+                    <span class="feature-text">1 Support System</span>
+                  </li>
+                  <li class="feature-item">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a0f8c66dfd46f81d3531e5a87e1325e20efebb7182e40842c26ee1dc41073ff4?apiKey=08e3ef7909dd4781ba6c9375e19e6af4&" alt="" class="feature-icon" />
+                    <span class="feature-text">Priority Support</span>
+                  </li>
+                </ul>
+                <button class="plan-button">Button</button>
+              </div>
+            </div>
+            <div class="plan-column">
+              <div class="plan-card featured-plan">
+                <h3 class="plan-type">professional</h3>
+                <div class="price-container">
+                  <span class="price">Free</span>
+                  <span class="price-period">/Month</span>
+                </div>
+                <ul class="feature-list">
+                  <li class="feature-item">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/e16808d7a581e02a6d6fbd87787063ea78111e7a7675480cb9c034db0dc4cec4?apiKey=08e3ef7909dd4781ba6c9375e19e6af4&" alt="" class="feature-icon" />
+                    <span class="feature-text">1 Unlimited Bandwidth</span>
+                  </li>
+                  <li class="feature-item">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/4b71f1e05a38257f65e64f5ddbbc8777a01b9c356d80c47d22436343a04891dd?apiKey=08e3ef7909dd4781ba6c9375e19e6af4&" alt="" class="feature-icon" />
+                    <span class="feature-text">2 PDF Access Sosmed</span>
+                  </li>
+                  <li class="feature-item">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/4b71f1e05a38257f65e64f5ddbbc8777a01b9c356d80c47d22436343a04891dd?apiKey=08e3ef7909dd4781ba6c9375e19e6af4&" alt="" class="feature-icon" />
+                    <span class="feature-text">1 Support System</span>
+                  </li>
+                  <li class="feature-item">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/e16808d7a581e02a6d6fbd87787063ea78111e7a7675480cb9c034db0dc4cec4?apiKey=08e3ef7909dd4781ba6c9375e19e6af4&" alt="" class="feature-icon" />
+                    <span class="feature-text">Priority Support</span>
+                  </li>
+                </ul>
+                <button class="plan-button">Button</button>
+              </div>
+            </div>
+            <div class="plan-column">
+              <div class="plan-card">
+                <h3 class="plan-type">professional</h3>
+                <div class="price-container">
+                  <span class="price">Free</span>
+                  <span class="price-period">/Month</span>
+                </div>
+                <ul class="feature-list">
+                  <li class="feature-item">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c395ec568953d538727fddb413a25441f1fff33adefbe8edd12cd1b977ff1248?apiKey=08e3ef7909dd4781ba6c9375e19e6af4&" alt="" class="feature-icon" />
+                    <span class="feature-text">1 Unlimited Bandwidth</span>
+                  </li>
+                  <li class="feature-item">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/4779aeb23cc08a75e082a05733cf006640c4f64975a224f4a1f78dbc27a89355?apiKey=08e3ef7909dd4781ba6c9375e19e6af4&" alt="" class="feature-icon" />
+                    <span class="feature-text">2 PDF Access Sosmed</span>
+                  </li>
+                  <li class="feature-item">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/4779aeb23cc08a75e082a05733cf006640c4f64975a224f4a1f78dbc27a89355?apiKey=08e3ef7909dd4781ba6c9375e19e6af4&" alt="" class="feature-icon" />
+                    <span class="feature-text">1 Support System</span>
+                  </li>
+                  <li class="feature-item">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c395ec568953d538727fddb413a25441f1fff33adefbe8edd12cd1b977ff1248?apiKey=08e3ef7909dd4781ba6c9375e19e6af4&" alt="" class="feature-icon" />
+                    <span class="feature-text">Priority Support</span>
+                  </li>
+                </ul>
+                <button class="plan-button">Button</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
